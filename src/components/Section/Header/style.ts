@@ -17,7 +17,6 @@ export const LogoLayout = styled.div`
   display: flex;
   justify-content: center;
   width: 20%;
-  cursor: pointer;
 `;
 
 export const Logo = styled.img`
@@ -29,6 +28,7 @@ export const LogoTitle = styled.div`
   margin: 2.5% 0 0 2.5%;
   font-size: 1.5rem;
   font-weight: bold;
+  cursor: pointer;
 `;
 
 export const AccountLayout = styled.div`
