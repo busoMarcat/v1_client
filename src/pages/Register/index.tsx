@@ -1,5 +1,11 @@
+import Header from "components/Section/Header";
+
 const Register = () => {
-  return <div></div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default Register;

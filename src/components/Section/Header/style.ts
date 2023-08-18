@@ -9,14 +9,20 @@ export const Layout = styled.header`
   padding: 0.75% 0;
 `;
 
+export const BlankBox = styled.div`
+  width: 40%;
+`;
+
 export const LogoLayout = styled.div`
   display: flex;
   justify-content: center;
   width: 20%;
+  cursor: pointer;
 `;
 
 export const Logo = styled.img`
   width: 1.5rem;
+  cursor: pointer;
 `;
 
 export const LogoTitle = styled.div`
@@ -25,10 +31,11 @@ export const LogoTitle = styled.div`
   font-weight: bold;
 `;
 
-export const Login = styled.div`
+export const AccountLayout = styled.div`
   display: flex;
   width: 40%;
   justify-content: center;
+  gap: 5%;
   font-size: 0.9rem;
   font-weight: bold;
 `;

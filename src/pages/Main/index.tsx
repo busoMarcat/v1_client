@@ -3,7 +3,7 @@ import Header from "components/Section/Header";
 const Main = () => {
   return (
     <>
-      <Header />
+      <Header showAccount={true} />
     </>
   );
 };

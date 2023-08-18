@@ -4,3 +4,8 @@
   box-sizing: border-box;
   font-family: "Nanum Gothic" !important;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
