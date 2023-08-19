@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import * as S from "./style";
 import logo from "assets/logo.svg";
 
@@ -7,14 +7,15 @@ interface HeaderProps {
 }
 
 const Header = ({ showAccount }: HeaderProps) => {
-  const navigate = useNavigate();
 
   return (
     <S.Layout>
       <S.BlankBox />
-      <S.LogoLayout onClick={() => navigate("/")}>
-        <S.Logo src={logo} />
-        <S.LogoTitle>BusoMarcat</S.LogoTitle>
+      <S.LogoLayout>
+        <S.LogoLink to="/">
+          <S.Logo src={logo} />
+          <S.LogoTitle>BusoMarcat</S.LogoTitle>
+        </S.LogoLink>
       </S.LogoLayout>
       {showAccount && (
         <S.AccountLayout>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import color from "styles/color";
 
@@ -19,16 +20,19 @@ export const LogoLayout = styled.div`
   width: 20%;
 `;
 
+export const LogoLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+`;
+
 export const Logo = styled.img`
   width: 1.5rem;
-  cursor: pointer;
 `;
 
 export const LogoTitle = styled.div`
   margin: 2.5% 0 0 2.5%;
   font-size: 1.5rem;
   font-weight: bold;
-  cursor: pointer;
 `;
 
 export const AccountLayout = styled.div`
