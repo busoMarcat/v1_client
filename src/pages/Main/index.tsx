@@ -1,5 +1,11 @@
+import Header from "components/Section/Header";
+
 const Main = () => {
-  return <div></div>;
+  return (
+    <>
+      <Header showAccount={true} />
+    </>
+  );
 };
 
 export default Main;
