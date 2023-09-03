@@ -37,7 +37,7 @@ export const FooterHGroup = styled.hgroup`
 export const FooterSection = styled.section`
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 5px;
     border-bottom: 1px solid ${color.white};
     width: 30%;
     border-width: 25%;
@@ -62,13 +62,15 @@ export const FooterCopyright = styled.span`
 `;
 
 export const Icon = styled.img`
-    width: 1rem;
+    width: 1.3rem;
+    display: flex;
+
 `;
 
 export const Detaile = styled.section`
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 5px;
     justify-content: center;
     height: 30%;
     width: 21%
@@ -76,11 +78,12 @@ export const Detaile = styled.section`
 
 export const Image = styled.section`
     display: flex;
-    gap: 2px;
+    gap: 8px;
     height: 30%;
 `
 
 export const FlexBox = styled.section`
     display: flex;
     flex-direction: row; 
+    gap: 3%;
 `
