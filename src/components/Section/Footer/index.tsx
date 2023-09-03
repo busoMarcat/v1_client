@@ -3,8 +3,8 @@ import insta from "assets/instagram.svg";
 import facebook from "assets/facebook.svg";
 import youtube from "assets/youtube.svg";
 
-function Footer() {
-  const { name, made, contact, address, copyRight, use, privacy, inquiry} = {
+const Footer = () => {
+  const { name, made, contact, address, copyRight, use, privacy, inquiry } = {
     name: "BusoMarcat",
     made: "상호: BusoMarcat | 대표 : 박현준",
     contact: "연락처 : 000-0000-0000 | 이메일 : busomarcat@000.com",
@@ -14,6 +14,7 @@ function Footer() {
     privacy: "개인정보처리방침" ,
     inquiry: "문의하기",
   };
+
 
   return (
     <S.FooterLayout>
