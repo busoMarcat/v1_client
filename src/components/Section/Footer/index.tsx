@@ -26,13 +26,13 @@ const Icons = [insta, facebook, youtube];
           </S.FooterHGroup>
           <S.AllSection>
           <S.FooterSection>
-            {[made, contact, address].map((info) => (
-              <S.FooterPolicyText>{info}</S.FooterPolicyText>
-            ))}
+          {[made, contact, address].map((info) => (
+            <S.FooterPolicyText key={info}>{info}</S.FooterPolicyText>
+          ))}
           </S.FooterSection>
           <S.Detaile>
             {[use, privacy, inquiry].map((info) => (
-              <S.FooterPolicyText>{info}</S.FooterPolicyText>
+              <S.FooterPolicyText key={info}>{info}</S.FooterPolicyText>
             ))}
           </S.Detaile>
           <S.Image>
