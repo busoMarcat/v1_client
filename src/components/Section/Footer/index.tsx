@@ -15,6 +15,7 @@ const Footer = () => {
     inquiry: "문의하기",
   };
 
+const Icons = [insta, facebook, youtube];
 
   return (
     <S.FooterLayout>
@@ -35,9 +36,9 @@ const Footer = () => {
             ))}
           </S.Detaile>
           <S.Image>
-            <S.Icon src ={insta}></S.Icon>
-            <S.Icon src={facebook}></S.Icon>
-            <S.Icon src={youtube}></S.Icon>
+            {Icons.map((Icon, index) => (
+              <S.Icon key={index} src={Icon} />
+            ))}
           </S.Image>
           </S.FlexBox>
           
