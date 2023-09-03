@@ -62,7 +62,7 @@ export const FooterCopyright = styled.span`
 `;
 
 export const Icon = styled.img`
-    width: 1.3rem;
+    width: 1.5rem;
     display: flex;
 
 `;
@@ -73,7 +73,7 @@ export const Detaile = styled.section`
     gap: 3px;
     justify-content: center;
     height: 30%;
-    width: 21%
+    width: 20%
 `
 
 export const Image = styled.section`
