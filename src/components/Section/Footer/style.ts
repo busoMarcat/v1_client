@@ -39,11 +39,10 @@ export const FooterSection = styled.section`
     flex-direction: column;
     gap: 2px;
     border-bottom: 1px solid ${color.white};
-    width: 25%;
+    width: 30%;
+    border-width: 25%;
     padding-bottom: 3%;
     justify-content: center;
-    height: 30%;
-    margin: 0;
 `;
 
 export const FooterSubTitle = styled.span`
@@ -70,15 +69,18 @@ export const Detaile = styled.section`
     display: flex;
     flex-direction: column;
     gap: 2px;
-    width: 60%;
     justify-content: center;
-    margin-left: 30%;
     height: 30%;
+    width: 21%
 `
 
 export const Image = styled.section`
-    display: flex;;
-    margin-left: 60%;
+    display: flex;
     gap: 2px;
     height: 30%;
+`
+
+export const FlexBox = styled.section`
+    display: flex;
+    flex-direction: row; 
 `

@@ -22,6 +22,7 @@ function Footer() {
           <S.FooterHGroup>
             <S.FooterTitle>{name}</S.FooterTitle>
           </S.FooterHGroup>
+          <S.FlexBox>
           <S.FooterSection>
             {[made, contact, address].map((info) => (
               <S.FooterPolicyText>{info}</S.FooterPolicyText>
@@ -37,6 +38,8 @@ function Footer() {
             <S.Icon src={facebook}></S.Icon>
             <S.Icon src={youtube}></S.Icon>
           </S.Image>
+          </S.FlexBox>
+          
           <S.FooterCopyright>{copyRight}</S.FooterCopyright>
         </S.FooterInfoBox>
       </S.FooterContainer>
