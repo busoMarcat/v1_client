@@ -24,7 +24,7 @@ const Icons = [insta, facebook, youtube];
           <S.FooterHGroup>
             <S.FooterTitle>{name}</S.FooterTitle>
           </S.FooterHGroup>
-          <S.FlexBox>
+          <S.AllSection>
           <S.FooterSection>
             {[made, contact, address].map((info) => (
               <S.FooterPolicyText>{info}</S.FooterPolicyText>
@@ -40,7 +40,7 @@ const Icons = [insta, facebook, youtube];
               <S.Icon key={index} src={Icon} />
             ))}
           </S.Image>
-          </S.FlexBox>
+          </S.AllSection>
           
           <S.FooterCopyright>{copyRight}</S.FooterCopyright>
         </S.FooterInfoBox>
