@@ -3,8 +3,8 @@ import insta from "assets/instagram.svg";
 import facebook from "assets/facebook.svg";
 import youtube from "assets/youtube.svg";
 
-function Footer() {
-  const { name, made, contact, address, copyRight, use, privacy, inquiry} = {
+const Footer = () => {
+  const { name, made, contact, address, copyRight, use, privacy, inquiry } = {
     name: "BusoMarcat",
     made: "상호: BusoMarcat | 대표 : 박현준",
     contact: "연락처 : 000-0000-0000 | 이메일 : busomarcat@000.com",
@@ -15,6 +15,8 @@ function Footer() {
     inquiry: "문의하기",
   };
 
+const Icons = [insta, facebook, youtube];
+
   return (
     <S.FooterLayout>
       <S.FooterContainer>
@@ -22,23 +24,23 @@ function Footer() {
           <S.FooterHGroup>
             <S.FooterTitle>{name}</S.FooterTitle>
           </S.FooterHGroup>
-          <S.FlexBox>
+          <S.AllSection>
           <S.FooterSection>
-            {[made, contact, address].map((info) => (
-              <S.FooterPolicyText>{info}</S.FooterPolicyText>
-            ))}
+          {[made, contact, address].map((info) => (
+            <S.FooterPolicyText key={info}>{info}</S.FooterPolicyText>
+          ))}
           </S.FooterSection>
           <S.Detaile>
             {[use, privacy, inquiry].map((info) => (
-              <S.FooterPolicyText>{info}</S.FooterPolicyText>
+              <S.FooterPolicyText key={info}>{info}</S.FooterPolicyText>
             ))}
           </S.Detaile>
           <S.Image>
-            <S.Icon src ={insta}></S.Icon>
-            <S.Icon src={facebook}></S.Icon>
-            <S.Icon src={youtube}></S.Icon>
+            {Icons.map((Icon, index) => (
+              <S.Icon key={index} src={Icon} />
+            ))}
           </S.Image>
-          </S.FlexBox>
+          </S.AllSection>
           
           <S.FooterCopyright>{copyRight}</S.FooterCopyright>
         </S.FooterInfoBox>
