@@ -1,19 +1,18 @@
 import { Link } from "react-router-dom";
 import * as S from "./style";
-import logo from "assets/logo.svg";
+import { Logo } from "assets/icons";
 
 interface HeaderProps {
   showAccount?: boolean;
 }
 
 const Header = ({ showAccount }: HeaderProps) => {
-
   return (
     <S.Layout>
       <S.BlankBox />
       <S.LogoLayout>
         <S.LogoLink to="/">
-          <S.Logo src={logo} />
+          <Logo />
           <S.LogoTitle>BusoMarcat</S.LogoTitle>
         </S.LogoLink>
       </S.LogoLayout>

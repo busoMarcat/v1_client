@@ -1,10 +1,11 @@
 import Header from "components/Section/Header";
 import Footer from "components/Section/Footer";
+import Search from "components/Search";
 
 const Main = () => {
   return (
     <>
-      <Header showAccount />
+      <Search />
       <Footer />
     </>
   );

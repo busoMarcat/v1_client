@@ -25,10 +25,6 @@ export const LogoLink = styled(Link)`
   justify-content: center;
 `;
 
-export const Logo = styled.img`
-  width: 1.5rem;
-`;
-
 export const LogoTitle = styled.div`
   margin: 2.5% 0 0 2.5%;
   font-size: 1.5rem;

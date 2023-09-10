@@ -1,7 +1,5 @@
 import * as S from "./style";
-import insta from "assets/instagram.svg";
-import facebook from "assets/facebook.svg";
-import youtube from "assets/youtube.svg";
+import { Instagram, Facebook, Youtube } from "assets/icons";
 
 const Footer = () => {
   const { name, made, contact, address, copyRight, use, privacy, inquiry } = {
@@ -15,7 +13,7 @@ const Footer = () => {
     inquiry: "문의하기",
   };
 
-  const Icons = [insta, facebook, youtube];
+  const Icons = [<Instagram />, <Facebook />, <Youtube />];
 
   return (
     <S.Layout>
@@ -35,11 +33,7 @@ const Footer = () => {
                 <S.PolicyText key={index}>{info}</S.PolicyText>
               ))}
             </S.More>
-            <S.Image>
-              {Icons.map((icon, index) => (
-                <S.Icon key={index} src={icon} />
-              ))}
-            </S.Image>
+            <S.Image>{Icons.map((icon) => icon)}</S.Image>
           </S.AllSection>
           <S.Copyright>{copyRight}</S.Copyright>
         </S.InfoBox>

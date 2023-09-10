@@ -3,13 +3,12 @@ import { font } from "styles/font";
 import color from "styles/color";
 
 export const Layout = styled.div`
-  width: 100%;
-  height: 400px;
   color: ${color.white};
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: ${color.black};
+  padding: 3% 0 2% 0;
 `;
 
 export const Container = styled.div`
@@ -61,11 +60,6 @@ export const Copyright = styled.span`
   margin-top: 3%;
   ${font.p4};
   color: ${color.white};
-`;
-
-export const Icon = styled.img`
-  width: 1.5rem;
-  display: flex;
 `;
 
 export const Image = styled.section`
