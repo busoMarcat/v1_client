@@ -33,7 +33,11 @@ const Footer = () => {
                 <S.PolicyText key={index}>{info}</S.PolicyText>
               ))}
             </S.More>
-            <S.Image>{Icons.map((icon) => icon)}</S.Image>
+            <S.Image>
+              {Icons.map((icon, index) => (
+                <div key={index}>{icon}</div>
+              ))}
+            </S.Image>
           </S.AllSection>
           <S.Copyright>{copyRight}</S.Copyright>
         </S.InfoBox>
