@@ -1,7 +1,5 @@
 import * as S from "./style";
-import insta from "assets/instagram.svg";
-import facebook from "assets/facebook.svg";
-import youtube from "assets/youtube.svg";
+import { Instagram, Facebook, Youtube } from "assets/icons";
 
 const Footer = () => {
   const { name, made, contact, address, copyRight, use, privacy, inquiry } = {
@@ -11,42 +9,41 @@ const Footer = () => {
     address: `주소 : 부산광역시 강서구 가락대로 1393`,
     copyRight: "Copyrightⓒ부소마켓",
     use: "이용약관",
-    privacy: "개인정보처리방침" ,
+    privacy: "개인정보처리방침",
     inquiry: "문의하기",
   };
 
-const Icons = [insta, facebook, youtube];
+  const Icons = [<Instagram />, <Facebook />, <Youtube />];
 
   return (
-    <S.FooterLayout>
-      <S.FooterContainer>
-        <S.FooterInfoBox>
-          <S.FooterHGroup>
-            <S.FooterTitle>{name}</S.FooterTitle>
-          </S.FooterHGroup>
+    <S.Layout>
+      <S.Container>
+        <S.InfoBox>
+          <S.HGroup>
+            <S.Title>{name}</S.Title>
+          </S.HGroup>
           <S.AllSection>
-          <S.FooterSection>
-          {[made, contact, address].map((info) => (
-            <S.FooterPolicyText key={info}>{info}</S.FooterPolicyText>
-          ))}
-          </S.FooterSection>
-          <S.Detaile>
-            {[use, privacy, inquiry].map((info) => (
-              <S.FooterPolicyText key={info}>{info}</S.FooterPolicyText>
-            ))}
-          </S.Detaile>
-          <S.Image>
-            {Icons.map((Icon, index) => (
-              <S.Icon key={index} src={Icon} />
-            ))}
-          </S.Image>
+            <S.Detail>
+              {[made, contact, address].map((info, index) => (
+                <S.PolicyText key={index}>{info}</S.PolicyText>
+              ))}
+            </S.Detail>
+            <S.More>
+              {[use, privacy, inquiry].map((info, index) => (
+                <S.PolicyText key={index}>{info}</S.PolicyText>
+              ))}
+            </S.More>
+            <S.Image>
+              {Icons.map((icon, index) => (
+                <div key={index}>{icon}</div>
+              ))}
+            </S.Image>
           </S.AllSection>
-          
-          <S.FooterCopyright>{copyRight}</S.FooterCopyright>
-        </S.FooterInfoBox>
-      </S.FooterContainer>
-    </S.FooterLayout>
+          <S.Copyright>{copyRight}</S.Copyright>
+        </S.InfoBox>
+      </S.Container>
+    </S.Layout>
   );
-}
+};
 
 export default Footer;

@@ -1,0 +1,9 @@
+export { default as Chatting } from "./Chatting";
+export { default as Facebook } from "./Facebook";
+export { default as Heart } from "./Heart";
+export { default as Instagram } from "./Instagram";
+export { default as Logo } from "./Logo";
+export { default as Profile } from "./Profile";
+export { default as Sale } from "./Sale";
+export { default as SearchIcon } from "./SearchIcon";
+export { default as Youtube } from "./Youtube";
